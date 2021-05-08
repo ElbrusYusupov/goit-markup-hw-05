@@ -497,9 +497,20 @@ img {
   min-height: 404px;
   overflow: hidden;
 }
+.card-item {
+  box-shadow: none:
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier((0.4, 0, 0.2, 1));
+}
 .card-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier((0.4, 0, 0.2, 1));
 }
 .menu-items {
   padding: 20px 24px;
@@ -509,22 +520,7 @@ img {
 .portfolio-item {
   margin-bottom: 4px;
 }
-.card-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
-/* .overlay p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-} */
 .card:hover .overlay {
   transform: translateY(0%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
