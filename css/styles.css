@@ -264,6 +264,13 @@ main,
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
 .nav-link::after {
   display: inline-block;
   position: absolute;
@@ -275,24 +282,23 @@ main,
   border-radius: 2px;
   background-color: var(--accent-color);
   opacity: 0;
+  visibility: hidden;
 }
 .current.nav-link::after {
   opacity: 1;
+  visibility: visible;
+  cursor: auto;
 }
 
-.mail-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-
-  transition-property: fill;
+.contact-link.link {
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mail-icon,
 .phone-icon {
-  width: 10px;
-  height: 16px;
+  width: 16px;
+  height: 12px;
   margin-right: 10px;
   fill: var(--primary-text-color);
 
