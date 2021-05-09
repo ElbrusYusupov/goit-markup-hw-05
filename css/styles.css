@@ -51,8 +51,8 @@ a.current {
 }
 
 .member-link {
-  background-color: var(--primary-white-color)
-  
+  background-color: var(--primary-white-color);
+
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -245,7 +245,7 @@ main,
 }
 .nav-link.link {
   position: relative;
-  
+
   color: var(--title-text-color);
   transition-property: color;
   transition-duration: 250ms;
@@ -597,7 +597,6 @@ img {
 }
 /* /Portfolio menu */
 /* /Portfolio content */
-
 
 /* Footer */
 .footer {
