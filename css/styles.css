@@ -57,7 +57,7 @@ a.current {
 .member-link {
   background-color: var(--primary-white-color)
   
-  transition-property: background-color, fill;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -66,10 +66,6 @@ a.current {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--accent-color);
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn {
   background-color: var(--accent-color);
@@ -181,10 +177,6 @@ main,
 .member-link:focus .member-svg-icon,
 .join-icons-list .join-svg-icon {
   fill: var(--primary-white-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .member-icons .member-svg-icon,
 .join-icons-list .join-svg-icon {
@@ -199,16 +191,15 @@ main,
   align-items: center;
 }
 .contact-items > .contact-link:hover .mail-icon,
-.contact-items > .contact-link:hover .phone-icon,
+.contact-items > .contact-link:hover .phone-icon {
+  fill: var(--accent-color);
+}
 .customer-link:hover .customer-icons,
 .customer-link:focus .customer-icons,
 .customer-icons:hover {
   fill: var(--accent-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* /Селекторы элементов и классов с повторяющимися значениями */
 
 /* Header */
@@ -256,7 +247,7 @@ main,
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link {
+.nav-link.link {
   position: relative;
   
   color: var(--title-text-color);
@@ -264,12 +255,9 @@ main,
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link:hover,
-.nav-link:focus {
+.nav-link.link:hover,
+.nav-link.link:focus {
   color: var(--accent-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .nav-link::after {
   display: inline-block;
@@ -491,10 +479,6 @@ img {
 .customer-link:hover,
 .customer-link:focus {
   border-color: var(--accent-color);
-
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* /About team section */
@@ -535,10 +519,6 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-
-  transition-property: box-shadow, color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* /Portfolio filter */
 
@@ -562,11 +542,8 @@ img {
 .card {
   width: 370px;
   min-height: 404px;
-  overflow: hidden;
 }
 .card-item {
-  box-shadow: none:
-
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -574,10 +551,6 @@ img {
 .card-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-items {
   padding: 20px 24px;
@@ -660,7 +633,6 @@ address {
 
 .join {
   margin-left: 70px;
-  base-l
 }
 .join-title {
   font-style: normal;
